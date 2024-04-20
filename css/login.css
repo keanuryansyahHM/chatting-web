@@ -1,0 +1,130 @@
+#login-section {
+  background-color: #ecedf2;
+}
+
+#login-root {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#login-box {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+
+#login-head {
+  display: flex;
+  color: #000;
+  align-items: center;
+}
+
+#login-head h2 {
+  font-size: 3rem;
+}
+
+.point-head {
+  width: 12px;
+  height: 12px;
+  background-color: maroon;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.lc {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.lc .label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: #ecedf2;
+  padding: 0 0.1rem;
+  left: 0.6rem;
+  font-size: 1rem;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.lc .label.active {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-170%);
+  -webkit-transform: translateY(-170%);
+  -moz-transform: translateY(-170%);
+  -ms-transform: translateY(-170%);
+  -o-transform: translateY(-170%);
+  background-color: #ecedf2;
+  padding: 0 0.1rem;
+  left: 0.6rem;
+  font-size: 1rem;
+}
+
+.see-password {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+#login-form input {
+  width: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background-color: #ecedf2;
+  border: 2px solid #000;
+}
+
+#login-btn {
+  width: 100%;
+}
+
+a#signup-now {
+  color: #000;
+}
+
+.login-image {
+  width: 100%;
+  height: 80%;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#chatting-box-wr {
+  height: 100%;
+  width: 400px;
+  padding: 1rem 0;
+}
+
+/* TOP */
+
+.chatting-box-top {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: chocolate;
+  color: #fff;
+}
+
+.chatting-box-top .left {
+  width: 60px;
+  height: 60px;
+}
+
+.chatting-box-top .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.chatting-box-top .right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  justify-content: center;
+}
+
+.chatting-box-top .right span:first-child {
+  font-size: 1.2rem;
+}
+
+/* MIDDLE */
+
+.chatting-box-middle {
+  width: 100%;
+  height: calc(100% - 76px - 55px);
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+.chatting-box-middle::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.chatting-box-middle::-webkit-scrollbar-thumb {
+  background-color: silver;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* BOTTOM */
+
+.chatting-box-bottom {
+  display: grid;
+  align-items: end;
+  grid-template-columns: 80% 18%;
+  justify-content: space-between;
+  height: max-content;
+  padding: 0.5rem;
+  height: 55px;
+}
+
+.chatting-box-bottom .left {
+  display: flex;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  cursor: text;
+  border: 1px solid #333;
+  height: 100%;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.chatting-box-bottom .left textarea {
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  outline: none;
+  /* background-color: orange; */
+  border: none;
+  height: max-content;
+  line-height: 1.2;
+}
+
+.chatting-box-bottom .left textarea::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fff;
+}
+
+.chatting-box-bottom .left textarea::-webkit-scrollbar-thumb {
+  background-color: silver;
+}
+
+.chatting-box-bottom .right {
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 0.6rem 0;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
