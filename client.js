@@ -219,6 +219,8 @@ socket.on('message', data => {
 
                     })
 
+                    let chattingMiddle = document.querySelector('.chatting-middle');
+                    chattingMiddle.scrollTop = chattingMiddle.scrollHeight;
 
 
                 } else {
@@ -251,6 +253,10 @@ socket.on('message', data => {
 
                     listChattingWr.appendChild(div);
 
+                    let chattingMiddle = document.querySelector('.chatting-middle');
+                    chattingMiddle.scrollTop = chattingMiddle.scrollHeight;
+
+
                 } else if (body == data.receiver) {
                     let div = document.createElement('div');
 
@@ -263,6 +269,10 @@ socket.on('message', data => {
                     div.appendChild(p);
 
                     listChattingWr.appendChild(div);
+
+                    let chattingMiddle = document.querySelector('.chatting-middle');
+                    chattingMiddle.scrollTop = chattingMiddle.scrollHeight;
+
 
 
 

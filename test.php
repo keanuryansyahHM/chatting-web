@@ -42,6 +42,11 @@
         let chattingBoxMiddle = document.querySelector('.chatting-box-middle');
         let currentScroll = 16;
 
+        window.addEventListener('load', () => {
+            chattingBoxMiddle.scrollTop = chattingBoxMiddle.scrollHeight;
+
+        })
+
 
 
         let handleInput = () => {
